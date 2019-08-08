@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#logo {
+  width: 120px;
+  padding-top: 3%;
+  overflow: visible;
+}
+
+.box1 {
+  /* background: gray; */
+  grid-area: box1;
+  overflow: visible;
+  padding-left: 10%;
+  /* align-self: center;
+    justify-self: center; */
+
+  /* justify-content: space-around;
+    align-items: center; */
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  /* background-color: #2f3030; */
+  grid-area: box3;
+  display: block;
+}
+
+h1 {
+  display: block;
+  position: relative;
+  top: 20%;
+  left: 15%;
+  font-size: 44px;
+  font-weight: 300;
+  padding-right: 20%;
+  line-height: 45px;
+}
+
+h3 {
+  position: relative;
+  top: 22%;
+  left: 15%;
+  font-weight: 300;
+  padding-right: 30%;
+  line-height: 25px;
+}
+
+.about {
+  grid-area: about;
+  justify-self: center;
+  align-self: center;
+}
+
+.order {
+  grid-area: order;
+  justify-self: center;
+  align-self: center;
+}
+
+main {
+  color: white;
+  background: #2f303a url(./img/wave.png) center bottom no-repeat;
+  background-size: contain;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 60% 10% 10% 1fr;
+  grid-template-rows: 10% 1fr;
+  grid-template-areas:
+    "box1 about order ."
+    "box2 box3 box3 box3";
+  /* justify-items: center;
+    align-items: center; */
+}
+
+button {
+  justify-content: center;
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 55px;
+  left: 30%;
+  top: 30%;
+  background: #1762a7;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  /* line-height: 36px; */
+  /* display: table-cell; */
+  /* text-align: center;*/
+  align-items: center;
+  /* display: flex; */
+  vertical-align: center;
+}
+
+button:hover {
+  background: white;
+  color: #1762a7;
+}
+
+@media screen and (max-width: 768px) {
+  /* For Tablets */
+  main {
+    background-size: 768px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* For Mobile Phones*/
+}
